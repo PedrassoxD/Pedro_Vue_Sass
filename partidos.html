@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="SASS/main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <title>Partidos</title>
+</head>
+
+<body class="bd2" style="text-align: center;">
+
+    <nav class="topnav" id="myTopnav">
+        <a href="index.html">Home</a>
+        <a href="partidos.html" class="active">Partidos de Fútbol</a>
+        <a href="highlights.html">Mejores Jugadas</a>
+        <a href="about.html">Sobre nosotros</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+    </nav>
+
+    <header>
+        <h1 class="titulo">FUTBOLEROS</h1>
+        <h4 class="subtitulo">Pasión por ser el equipo ganador</h4>
+    </header>
+
+    <div style="height: 10rem;"></div>
+
+    <div class="container">
+        <div class="row" id="app">
+            <input id="input-search" type="text" class="form-control" v-model="textSearch" placeholder='Nombre equipo...'>
+            <br/><br/>
+            <div class="column" id="list-teams" v-if="soccerFilter && soccerFilter.length">
+                <div class="card" v-for="socc in soccerFilter">
+                    <div class="cols">
+                        <label><a class="enlace" :href="socc.side1.url">{{ socc.side1.name }}</a></label>
+                        <label>VS</label>
+                        <label><a class="enlace" :href="socc.side2.url">{{ socc.side2.name }}</a></label><br>
+                        <label><b>Imagen del partido: </b></label><br />
+                        <img class="responsive" :src="socc.thumbnail" alt="Imagen del partido">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <aside class="capa1">
+        <h1>Prensa deportiva</h1>
+        <br>
+        <ul>
+            <li><a href="https://as.com/">AS</a></li><br>
+            <li>
+                <a href="https://www.marca.com/">Marca</a>
+            </li><br>
+            <li>
+                <a href="https://www.mundodeportivo.com/">Mundo Deportivo</a>
+            </li><br>
+            <li>
+                <a href="https://www.sport.es/es/">SPORT</a>
+            </li><br>
+            <li>
+                <a href="https://www.diariolagrada.com/">La grada</a>
+            </li><br>
+            <li>
+                <a href="https://www.superdeporte.es/">Superdeporte</a>
+            </li><br>
+            <li>
+                <a href="https://www.dxtcampeon.com/">DXT Campeón</a>
+            </li>
+        </ul>
+    </aside>
+
+    <aside class="capa2">
+        <h1>Ligas internacionales</h1>
+        <br>
+        <ul>
+            <li><a href="https://www.premierleague.com/">Premier League</a></li><br>
+            <li>
+                <a href="https://www.laliga.com/">La Liga</a>
+            </li><br>
+            <li>
+                <a href="https://www.google.com/search?q=Serie+a+tim&rlz=1C1CHBF_esES886ES886&oq=Serie+a+tim&aqs=chrome..69i57j0l7.2254j0j7&sourceid=chrome&ie=UTF-8#sie=lg;/g/11h02jy6ph;2;/m/03zv9;mt;fp;1;;">SERIE A TIM</a>
+            </li><br>
+            <li>
+                <a href="https://www.bundesliga.com/es/bundesliga">Bundesliga</a>
+            </li><br>
+            <li>
+                <a href="https://www.google.com/search?q=ligue+1&rlz=1C1CHBF_esES886ES886&oq=ligue+1&aqs=chrome..69i57j0l7.1286j1j4&sourceid=chrome&ie=UTF-8#sie=lg;/g/11fjzc6g42;2;/m/044hxl;mt;fp;1;;">Ligue 1</a>
+            </li><br>
+            <li>
+                <a href="https://www.uefa.com/">Uefa</a>
+            </li><br>
+            <li>
+                <a href="http://www.conmebol.com/">Connmebol</a>
+            </li>
+        </ul>
+    </aside>
+
+    <br>
+    <br>
+    <br>
+
+    <footer class="footer-distributed">
+        <div class="divContent">
+            <br>
+            <a href="https://www.github.com/PedrassoxD"><i class="fab fa-github fa-2x"></i></a>
+            <a href="https://twitter.com/SniperPedrito?lang=es"><i class="fab fa-twitter fa-2x"></i></a>
+            <a href="mailto:pedroperlab@gmail.com?Subject=Hola%20buenas%20tardes%20que%20desea"><i class="fab fa-google-plus-g fa-2x"></i></a>
+            <br><br>
+            <span>© 2020 Copyright: <a>PedroPJPL.com</a> - Aviso legal, política de privacidad y de cookies</span>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/vue "></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js "></script>
+    <script type="text/javascript" src="js/newVue.js"></script>
+    <script type="text/javascript" src="js/js.js"></script>
+
+</body>
+
+</html>

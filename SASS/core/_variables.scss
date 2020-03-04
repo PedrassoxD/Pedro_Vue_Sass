@@ -1,0 +1,70 @@
+/* Medias para dispositivos */
+
+$mediaMovil: 360px;
+$media500: 500px;
+$media576: 576px;
+$media600: 600px;
+$media700: 700px;
+$mediaTablet: 768px;
+$media768: 768px;
+$media800: 800px;
+$media992: 992px;
+$media1000: 1000px;
+$mediaDesktop: 1280px;
+$mediaDesktopGrande: 2389px;
+$media40rem: 40rem;
+$media56rem: 56rem;
+
+/* Posiciones */
+
+$positionR: relative;
+$positionA: absolute;
+
+/* Anchos y altos */
+
+$width100: 100%;
+$height100: 100%;
+$width50: 50%;
+$height50: 50%;
+$widthA: auto;
+$heightA: auto;
+
+/* Body Background */
+
+$bgRepeat: no-repeat;
+$bgCover: cover;
+$bgCCenter: center center;
+$bgFixed: fixed;
+
+/* Overflow */
+
+$overflowH: hidden;
+
+/* Variables Font */
+
+$tituloSize: 50px;
+$tituloMarginT: 50px;
+$tituloAbt: 35px;
+$subtituloSize: 25px;
+$sizeText: 16px;
+$lineHText: 20px;
+$fontWeigthText400: 400;
+$colorText: #ecf0f1;
+$fFamilyText: 'Open Sans',
+sans-serif;
+$fontCalibri: Calibri;
+
+/* Variables contenedores */
+
+$maxWidth540: 540px;
+$maxWidth720: 720px;
+$maxWidth960: 960px;
+$maxWidth1140: 1140px;
+$marginR: auto;
+$marginL: auto;
+
+/* Variables Cards */
+
+$cdisplayTable: table;
+$cClearBoth: both;
+$cTextAlignCenter: center;

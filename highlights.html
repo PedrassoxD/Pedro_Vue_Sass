@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="SASS/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <title>Mejores jugadas</title>
+</head>
+
+<body>
+
+    <body style="text-align: center;">
+
+        <nav class="topnav" id="myTopnav">
+            <a href="index.html">Home</a>
+            <a href="partidos.html">Partidos de Fútbol</a>
+            <a href="highlights.html" class="active">Mejores Jugadas</a>
+            <a href="about.html">Sobre nosotros</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </nav>
+
+        <header>
+            <h1 class="titulo">FUTBOLEROS</h1>
+            <br>
+            <h4 class="subtitulo">Pasión por ser el equipo ganador.</h4>
+        </header>
+
+        <br>
+        <br>
+        <br>
+
+        <div class="row" id="app">
+            <input id="input-search" type="text" class="form-control" v-model="textSearch" placeholder='Nombre competicion...'>
+            <br /><br />
+            <div class="column" id="list-teams" v-if="soccerFilter2 && soccerFilter2.length">
+                <div class="card" v-for="socc in soccerFilter2">
+                    <div>
+                        <label><a class="enlace" :href="socc.competition.url">{{ socc.competition.name }}</a></label><br />
+                        <label><a class="enlace">{{ socc.side2.name }} </a><b> VS </b><a class="enlace"> {{ socc.side1.name }}</a></label><br>
+                        <label><b>Highlights: </b></label><br />
+                        <div class="container">
+                            <span v-html="socc.embed"></span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <br>
+        <br>
+
+        <footer class="footer-distributed ">
+            <div class="divContent ">
+                <br>
+                <a href="https://www.github.com/PedrassoxD "><i class="fab fa-github fa-2x "></i></a>
+                <a href="https://twitter.com/SniperPedrito?lang=es "><i class="fab fa-twitter fa-2x "></i></a>
+                <a href="mailto:pedroperlab@gmail.com?Subject=Hola%20buenas%20tardes%20que%20desea "><i class="fab fa-google-plus-g fa-2x "></i></a>
+                <br><br>
+                <span>© 2020 Copyright: <a>PedroPJPL.com</a> - Aviso legal, política de privacidad y de cookies</span>
+            </div>
+        </footer>
+
+        <script src="https://unpkg.com/vue "></script>
+        <script src="https://unpkg.com/axios/dist/axios.min.js "></script>
+        <script type="text/javascript " src="js/newVue.js "></script>
+        <script type="text/javascript " src="js/js.js "></script>
+
+    </body>
+
+</html>

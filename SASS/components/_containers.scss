@@ -1,0 +1,49 @@
+@import 'core/variables';
+.container {
+    margin-right: $marginR;
+    margin-left: $marginL;
+    padding-right: 15px;
+    padding-left: 15px;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+}
+
+.box {
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 2%;
+}
+
+.container-fluid {
+    margin-top: 10%;
+    background-color: rgb(255, 255, 255);
+    width: $width100;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: $marginR;
+    margin-left: $marginL;
+}
+
+@media (min-width: $media576) {
+    .container {
+        max-width: $maxWidth540;
+    }
+}
+
+@media (min-width: $media768) {
+    .container {
+        max-width: $maxWidth720;
+    }
+}
+
+@media (min-width: $media992) {
+    .container {
+        max-width: $maxWidth960;
+    }
+}
+
+@media (min-width: $mediaDesktop) {
+    .container {
+        max-width: $maxWidth1140;
+    }
+}

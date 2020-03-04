@@ -1,0 +1,33 @@
+@import 'core/variables';
+
+/* Estilos cards Partidos/Mejores Jugadas */
+
+.column {
+    width: 100%;
+    padding: 0 -10px;
+}
+
+.row {
+    margin: 0;
+    &:after {
+        content: "";
+        display: $cdisplayTable;
+        clear: $cClearBoth;
+    }
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: $cTextAlignCenter;
+}
+
+
+/* Media para los estilos de las imagenes de Partidos en dispositivo movil */
+
+@media only screen and(min-width: $mediaMovil) {
+    .responsive {
+        width: 100%;
+        height: $heightA;
+    }
+}

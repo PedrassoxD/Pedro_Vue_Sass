@@ -1,0 +1,45 @@
+/* Font */
+
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
+
+/* Algunos de los titulos de la aplicación tendrán este estilo. */
+
+.tituloHeader {
+    font-family: $fontCalibri;
+    font-size: 5em;
+    margin-top: $tituloMarginT;
+    letter-spacing: 0.3em;
+    text-align: center;
+}
+
+.subtituloHeader {
+    font-family: $fontCalibri;
+    font-size: 3em;
+}
+
+.titulo {
+    font-family: $fontCalibri;
+    font-size: $tituloSize;
+    margin-top: $tituloMarginT;
+    text-align: center;
+}
+
+.subtitulo {
+    font-family: $fontCalibri;
+    font-size: $subtituloSize;
+}
+
+.tituloAbout {
+    font-family: $fontCalibri;
+    font-size: $tituloAbt;
+}
+
+.enlace {
+    font-family: $fontCalibri;
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+}
+
+b {
+    font-size: 30px;
+}
